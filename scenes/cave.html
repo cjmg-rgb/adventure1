@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-500">
+    <div class="grid h-screen place-content-center">
+        <div class="cave-menu bg-slate-600 p-2 rounded w-[500px] mx-auto">
+
+            <!-- Title tab -->
+            <div class="title-tab"></div>
+
+            <!-- Information Tab -->
+            <div class="info-tab"></div>
+
+            <!-- Location Indicator -->
+            <div class="bg-[#135D66] p-5 text-[#E3FEF7] text-sm text-center">
+                <h3>You entered the <span class="font-medium">cave</span>, you saw some monsters</h3>
+            </div> 
+
+            <!-- Cave Navigation -->
+            <div class="nav-tab cave-tab enemy-btns"></div>
+        </div>
+        <div hidden class="cave-menu slime-enemy bg-slate-600 p-2 rounded w-[500px] mx-auto">
+
+            <!-- Title tab -->
+            <div class="title-tab"></div>
+
+            <!-- Information Tab -->
+            <div class="info-tab"></div>
+
+            <!-- Location Indicator -->
+            <div class="bg-[#135D66] p-5 text-[#E3FEF7] text-sm text-center">
+                <h3>Cute bouncy <span class="font-medium">slime</span>, kill it</h3>
+            </div> 
+
+            <!-- Home Navigation -->
+            <div class="nav-tab enemy-tab slime"></div>
+        </div>
+        <div hidden class="cave-menu wolf-enemy bg-slate-600 p-2 rounded w-[500px] mx-auto">
+
+            <!-- Title tab -->
+            <div class="title-tab"></div>
+
+            <!-- Information Tab -->
+            <div class="info-tab"></div>
+
+            <!-- Location Indicator -->
+            <div class="bg-[#135D66] p-5 text-[#E3FEF7] text-sm text-center">
+                <h3>You saw a glowing pointy sharp fangs moving towards you, it's a <span class="font-medium">Wolf</span></h3>
+            </div> 
+
+            <!-- Home Navigation -->
+            <div class="nav-tab enemy-tab wolf"></div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
